@@ -1,0 +1,22 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Dégraissant Industriel",
+      "price": 85,
+      "category": "Industriel",
+      "image": "/images/degraissant.jpg",
+      "description": "Puissant dégraissant pour surfaces grasses",
+      "badge": "Top vente"
+    },
+    {
+      "id": 1776255966875,
+      "name": "degraissant",
+      "price": 20,
+      "category": "Maison",
+      "image": "/images/multisurfaces.jpg",
+      "description": "yuuy",
+      "badge": "Nouveau"
+    }
+  ]
+}
