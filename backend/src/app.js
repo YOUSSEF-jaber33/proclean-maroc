@@ -17,8 +17,6 @@ app.use(
 );
 
 app.use(express.json());
-
-// IMPORTANT : rendre les images uploadées accessibles
 app.use("/uploads", express.static(path.join(__dirname, "uploads")));
 
 app.get("/", (req, res) => {

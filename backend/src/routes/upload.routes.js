@@ -29,9 +29,12 @@ router.post("/", authMiddleware, upload.single("image"), (req, res) => {
         return res.status(400).json({ message: "Aucune image reçue" });
     }
 
+    const baseUrl =
+        process.env.BACKEND_URL || `http://localhost:${process.env.PORT || 5000}`;
+
     res.status(201).json({
         message: "Image uploadée",
-        imageUrl: `http://localhost:${process.env.PORT || 5000}/uploads/${req.file.filename}`,
+        imageUrl: `${baseUrl}/uploads/${req.file.filename}`,
     });
 });
 
